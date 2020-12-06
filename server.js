@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
+app.use(cors());
 
 // Bodyparser middleware
 app.use(express.json({ extended: false }));
